@@ -9,8 +9,8 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/gpmtools/gh-task/internal/ctx"
-	"github.com/gpmtools/gh-task/internal/ghc"
+	"github.com/gpmtools/common/ctx"
+	"github.com/gpmtools/common/ghc"
 	"github.com/spf13/cobra"
 )
 
