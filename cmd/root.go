@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 
 	"github.com/gpmtools/common/ctx"
-	"github.com/gpmtools/common/ghc"
+	"github.com/gpmtools/common/exc/ghc"
 	"github.com/spf13/cobra"
 )
 
