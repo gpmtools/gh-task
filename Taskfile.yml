@@ -2,14 +2,17 @@
 version: "3"
 silent: true
 
-includes:
-  dev:
-    taskfile: .taskfiles/Dev.yml
-    flatten: true
-    dir: .
-
 tasks:
   default:
     cmds:
       - task -l
+    silent: true
+
+  build:
+    desc: Build the gh-task binary
+    aliases: [b]
+    cmds:
+      - go build -o gh-task main.go
+      - gh extension remove gh-task
+      - gh extension install . --force
     silent: true
